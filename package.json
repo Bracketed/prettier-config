@@ -3,7 +3,6 @@
 	"description": "Preset prettier configuration for Bracketed Softworks projects and community users' projects.",
 	"packageManager": "yarn@4.9.2",
 	"version": "1.0.0",
-	"private": true,
 	"publishConfig": {
 		"access": "public"
 	},
