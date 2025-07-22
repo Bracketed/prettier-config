@@ -10,24 +10,6 @@ import type { Config } from 'prettier';
  * ```
  */
 export default {
-	plugins: [
-		'@prettier/plugin-php',
-		'@prettier/plugin-pug',
-		'@prettier/plugin-ruby',
-		'@prettier/plugin-xml',
-		'prettier-plugin-prisma',
-		'prettier-plugin-sh',
-		'prettier-plugin-sql',
-		'prettier-plugin-css-order',
-		'prettier-plugin-tailwindcss',
-		'prettier-plugin-sort-imports',
-		'prettier-plugin-embed',
-		'prettier-plugin-merge',
-		'prettier-plugin-sort-package-json',
-		'prettier-plugin-jsdoc-type',
-		'prettier-plugin-jsdoc',
-		'prettier-plugin-sort-json',
-	],
 	arrowParens: 'always',
 	bracketSpacing: true,
 	endOfLine: 'crlf',
