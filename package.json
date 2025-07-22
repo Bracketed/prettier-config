@@ -1,6 +1,6 @@
 {
-	"name": "@bracketed/package",
-	"description": "Description",
+	"name": "@bracketed/prettier-configuration",
+	"description": "Preset prettier configuration for Bracketed Softworks projects and community users' projects.",
 	"packageManager": "yarn@4.9.2",
 	"version": "1.0.0",
 	"private": true,
@@ -29,33 +29,30 @@
 	],
 	"repository": {
 		"type": "git",
-		"url": "https://github.com/bracketed/templates-package"
+		"url": "https://github.com/Bracketed/prettier-config"
 	},
-	"homepage": "https://bracketed.co.uk",
+	"homepage": "https://github.com/Bracketed/prettier-config",
 	"sideEffects": false,
 	"bugs": {
-		"url": "https://github.com/bracketed/templates-package/issues"
+		"url": "https://github.com/Bracketed/prettier-config/issues"
 	},
 	"keywords": [
 		"bracketed",
-		"typescript"
+		"typescript",
+		"prettier",
+		"formatter",
+		"configuration",
+		"preset"
 	],
 	"scripts": {
-		"lint": "yarn prettier --write .",
-		"validate": "yarn prettier --check .",
 		"build": "tsup",
 		"update": "yarn upgrade-interactive"
 	},
 	"devDependencies": {
+		"@bracketed/tsup-configuration": "^1.0.5",
 		"@bracketed/typescript-config": "^4.7.1",
-		"@swc/core": "^1.12.5",
+		"@swc/core": "^1.13.1",
 		"@types/node": "^24.0.3",
-		"esbuild": "^0.25.5",
-		"esbuild-fix-imports-plugin": "^1.0.21",
-		"esbuild-plugin-copy": "^2.1.1",
-		"esbuild-plugin-file-path-extensions": "^2.1.4",
-		"esbuild-plugin-version-injector": "^1.2.1",
-		"prettier": "^3.5.3",
 		"tslib": "^2.8.1",
 		"tsup": "^8.5.0",
 		"typescript": "^5.8.3"
@@ -64,6 +61,25 @@
 		"node": ">=18"
 	},
 	"dependencies": {
-		"@bracketed/tsup-configuration": "^1.0.5"
+		"@prettier/plugin-php": "^0.24.0",
+		"@prettier/plugin-pug": "^3.4.0",
+		"@prettier/plugin-ruby": "^4.0.4",
+		"@prettier/plugin-xml": "^3.4.2",
+		"prettier": "^3.6.2",
+		"prettier-plugin-css-order": "^2.1.2",
+		"prettier-plugin-embed": "^0.5.0",
+		"prettier-plugin-jsdoc": "^1.3.3",
+		"prettier-plugin-jsdoc-type": "^0.1.12",
+		"prettier-plugin-merge": "^0.8.0",
+		"prettier-plugin-prisma": "^5.0.0",
+		"prettier-plugin-sh": "^0.18.0",
+		"prettier-plugin-sort-imports": "^1.8.8",
+		"prettier-plugin-sort-json": "^4.1.1",
+		"prettier-plugin-sort-package-json": "^1.1.0",
+		"prettier-plugin-sql": "^0.19.2",
+		"prettier-plugin-tailwindcss": "^0.6.14"
+	},
+	"peerDependencies": {
+		"prettier": "^3.6.2"
 	}
 }
